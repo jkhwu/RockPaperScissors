@@ -8,9 +8,10 @@ var computerChoices = ["r", "p", "s"];
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
-    if (!computerChoices.includes(event.key)) {
-        return alert("WRONG KEY! YOU BROKE THE GAME!");
-    }
+    // if (!computerChoices.includes(event.key)) {
+    //     return alert("Please choose r, p, or s!");
+    // }
+
     // Determines which key was pressed, displays
     var userGuess = event.key;
     if (userGuess === "r") {
